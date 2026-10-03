@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <title>الجيلاني للعطور — محلكم السوداني في مصر</title>
 <meta name="description" content="متجر الجيلاني للعطور: عطور ومنتجات سودانية وعناية، مع فرعين في القاهرة (الدقي ومدينة نصر).">
 <meta name="theme-color" content="#050505"><meta property="og:title" content="الجيلاني للعطور"><meta property="og:description" content="محلكم السوداني في مصر"><meta property="og:type" content="website">
@@ -66,8 +66,8 @@ label{display:block;font-size:.9rem;margin:12px 0 4px;font-weight:500}
 .empty{text-align:center;padding:56px 12px;color:var(--mut)}.empty h2{color:var(--ink)}
 .trust{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;font-size:.88rem}@media(min-width:800px){.trust{grid-template-columns:repeat(4,1fr)}}.trust div{padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--card)}
 details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px}summary{cursor:pointer;font-weight:600}
-footer{background:var(--dk);color:#cdbf9f;margin-top:40px;padding:40px 0 90px;font-size:.9rem}footer .wrap{display:grid;gap:24px}@media(min-width:800px){footer .wrap{grid-template-columns:1.4fr 1fr 1fr 1fr 1.2fr}}
-footer h3{color:#F1E6C6;font-size:.95rem}footer a{display:block;padding:3px 0}footer a:hover{color:#c9a35a}
+
+
 .fl{position:fixed;bottom:16px;z-index:30;width:54px;height:54px;border-radius:50%;border:0;display:grid;place-items:center;cursor:pointer;box-shadow:0 6px 18px #0004}
 .fl svg{width:26px;height:26px}#wa{inset-inline-start:16px;background:#C9A24B;color:#050505;bottom:calc(16px + env(safe-area-inset-bottom,0px))}#ai{inset-inline-end:16px;background:var(--dk);color:#c9a35a;border:1px solid #c9a35a;bottom:calc(16px + env(safe-area-inset-bottom,0px))}
 #chat{position:fixed;z-index:50;inset-inline-end:12px;bottom:84px;width:min(380px,calc(100vw - 24px));height:min(560px,calc(100dvh - 110px));background:var(--bg);border:1px solid var(--line);border-radius:18px;box-shadow:0 14px 40px #0005;display:none;flex-direction:column;overflow:hidden}#chat.on{display:flex;animation:fi .25s}
@@ -122,7 +122,7 @@ section h2{color:var(--gs)}section h2::after,.ph::after{content:"";display:block
 .cat small{color:var(--gs);opacity:.8}.cat::after{content:"";position:absolute;inset-inline:14px;bottom:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:.4s}.cat:hover::after{transform:scaleX(1)}
 .band{display:grid;gap:16px;padding:28px;border-radius:18px;border:1px solid var(--gold);background:radial-gradient(400px 200px at 10% 0,#C9A24B2e,transparent),linear-gradient(135deg,#14110a,#1a1407)}.band p{color:#d9c9a3;max-width:60ch}
 .steps{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.step{padding:20px;border:1px solid var(--line);border-radius:14px;background:#0b0b0b}.step b{font:700 2.2rem 'Playfair Display',serif;color:var(--gold);display:block}
-footer{border-top:1px solid var(--gold);background:linear-gradient(180deg,#0b0b0b,#050505)}
+
 .ok .mk{animation:pop .6s both}@keyframes pop{from{transform:scale(.4);opacity:0}}
 .hero .art .fb{filter:drop-shadow(0 16px 22px #000)}.wl:active,.btn:active{transform:scale(.95)}
 
@@ -135,9 +135,9 @@ footer{border-top:1px solid var(--gold);background:linear-gradient(180deg,#0b0b0
 #mo .body{stroke:#E4C97A;stroke-width:1.6;fill:#1a1407;transition:fill .4s}#mo.open .body{fill:#2a2008}
 #mo .mist circle{opacity:0;fill:#E4C97A;stroke:none}#mo.open .mist circle{animation:ms 1.6s ease-out infinite}#mo.open .mist circle:nth-child(2){animation-delay:.3s}#mo.open .mist circle:nth-child(3){animation-delay:.6s}
 @keyframes ms{0%{opacity:0;transform:translate(0,0)}30%{opacity:.9}100%{opacity:0;transform:translate(8px,-9px)}}
-#menu{display:flex;flex-direction:column;gap:2px;z-index:19;inset:0;padding:24px 22px 40px;visibility:hidden;clip-path:circle(0 at 92% 0);background:radial-gradient(520px 320px at 85% 0,#C9A24B33,transparent 70%),#050505;transition:clip-path .65s cubic-bezier(.7,0,.2,1),visibility 0s .65s}
+#menu{display:flex;flex-direction:column;gap:2px;z-index:19;inset:0;overflow-x:hidden;overscroll-behavior:contain;padding:24px 22px 40px;visibility:hidden;clip-path:circle(0 at 92% 0);background:radial-gradient(520px 320px at 85% 0,#C9A24B33,transparent 70%),#050505;transition:clip-path .65s cubic-bezier(.7,0,.2,1),visibility 0s .65s}
 #menu.on{visibility:visible;clip-path:circle(160% at 92% 0);transition:clip-path .65s cubic-bezier(.7,0,.2,1),visibility 0s}
-#menu a{opacity:0;transform:translateX(26px);font-family:'Playfair Display','Noto Kufi Arabic',serif;font-size:1.2rem;border-bottom:1px solid var(--line);transition:opacity .3s,transform .3s}
+#menu a{opacity:0;transform:translateY(14px);font-family:'Playfair Display','Noto Kufi Arabic',serif;font-size:1.2rem;border-bottom:1px solid var(--line);transition:opacity .3s,transform .3s}
 #menu.on a{opacity:1;transform:none;transition:opacity .5s,transform .5s,padding .3s,color .3s;transition-delay:calc(var(--i)*55ms + .25s)}
 #menu.on a:hover{color:var(--gs);padding-inline-start:12px;transition-delay:0s}
 #menu .mf{opacity:0;transform:translateY(14px);margin-top:22px;display:flex;align-items:center;gap:14px;transition:.3s}#menu.on .mf{opacity:1;transform:none;transition:opacity .6s,transform .6s;transition-delay:.9s}
@@ -168,7 +168,46 @@ footer{border-top:1px solid var(--gold);background:linear-gradient(180deg,#0b0b0
 @keyframes stA{0%{transform:translate(0,0) scale(.45);opacity:0}10%{opacity:.85}25%{transform:translate(-45%,-80%) scale(.8)}50%{transform:translate(55%,-170%) scale(1.25);opacity:.6}75%{transform:translate(-50%,-250%) scale(1.7);opacity:.3}100%{transform:translate(15%,-320%) scale(2.2);opacity:0}}
 @keyframes stB{0%{transform:translate(0,0) scale(.45);opacity:0}10%{opacity:.85}25%{transform:translate(45%,-80%) scale(.8)}50%{transform:translate(-55%,-170%) scale(1.25);opacity:.6}75%{transform:translate(50%,-250%) scale(1.7);opacity:.3}100%{transform:translate(-15%,-320%) scale(2.2);opacity:0}}
 .ib.lb .cnt{top:0;inset-inline-start:8px}.cnt[hidden]{display:none}
-.hero .art{gap:2.5%;margin-top:34px}.hero .art .f1{width:28%}.hero .art .f2{width:38%}.hero .art .f3{width:29%}</style>
+.hero .art{gap:2.5%;margin-top:34px}.hero .art .f1{width:28%}.hero .art .f2{width:38%}.hero .art .f3{width:29%}
+/* ===== zoom lock ===== */
+html,body{touch-action:pan-y;-webkit-text-size-adjust:100%;text-size-adjust:100%;max-width:100%}
+#menu,#so,#msgs,#chat{touch-action:pan-y}
+/* ===== footer ===== */
+footer{position:relative;margin-top:48px;color:#cdbf9f;font-size:.9rem;overflow:hidden;border-top:1px solid var(--line);background:radial-gradient(520px 240px at 50% 0,#C9A24B22,transparent 70%),linear-gradient(180deg,#0b0b0b,#050505)}
+footer::before{content:"";position:absolute;top:-1px;left:0;height:2px;width:35%;pointer-events:none;background:linear-gradient(90deg,transparent,var(--gs),transparent);animation:ftsw 7s ease-in-out infinite}
+@keyframes ftsw{from{transform:translateX(-100%)}to{transform:translateX(300%)}}
+#ft{display:flex;flex-direction:column;gap:26px;padding:42px 16px calc(100px + env(safe-area-inset-bottom,0px))}
+.ft-s.rv{transition-delay:calc(var(--i,0)*90ms)}
+.ft-s h3{display:flex;align-items:center;gap:10px;margin:0 0 12px;font-size:.85rem;color:var(--gs)}
+.ft-s h3::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+.ft-top{display:flex;flex-direction:column;align-items:center;text-align:center}
+.ft-top h3{display:block;font-size:1.2rem;margin:12px 0 2px}.ft-top h3::after{display:none}
+.ft-top p{margin:0 0 16px;color:var(--mut)}
+.ft-logo{position:relative;width:84px;height:84px;display:block}
+.ft-logo img{position:relative;z-index:1;width:100%;height:100%;display:block;border-radius:50%;box-shadow:0 0 0 1px #c9a24b88}
+.ft-logo::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:1px solid var(--gold);opacity:0;animation:ftr 4s ease-out infinite}
+@keyframes ftr{0%{transform:scale(.95);opacity:.65}100%{transform:scale(1.3);opacity:0}}
+.ft-soc{display:flex;gap:10px;justify-content:center}
+.ft-soc a{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);background:#0e0c07;color:var(--gs);transition:transform .3s,background .3s,border-color .3s,color .3s}
+.ft-soc a:hover,.ft-soc a:active{transform:translateY(-3px);background:var(--gold);border-color:var(--gold);color:#050505}
+.ft-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px;padding-top:24px;border-top:1px solid var(--line)}
+.ft-cols>div:first-child{grid-column:1/-1}
+.ft-chips{display:flex;flex-wrap:wrap;gap:8px}
+.ft-chips a{padding:5px 14px;border:1px solid var(--line);border-radius:20px;background:#0e0c07;font-size:.85rem;transition:transform .3s,border-color .3s,color .3s}
+.ft-chips a:hover,.ft-chips a:active{transform:translateY(-2px);border-color:var(--gold);color:var(--gs)}
+.ft-ls a{display:block;padding:6px 0;transition:transform .25s,color .25s}
+.ft-ls a:hover,.ft-ls a:active{color:var(--gs);transform:translateX(-5px)}
+.ft-ct{padding:18px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(160deg,#14110a,#0b0b0b)}
+.ft-btns{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px}.ft-btns .btn{flex:1 1 140px}
+.ft-b{display:flex;gap:10px;align-items:flex-start;padding:12px 0 0;margin-top:12px;border-top:1px solid var(--line);transition:color .25s}
+.ft-b:hover{color:var(--gs)}
+.ft-b svg{flex:none;width:18px;height:18px;margin-top:5px;fill:none;stroke:var(--gold);stroke-width:1.6}
+.ft-b b{display:block;color:var(--ink);font-weight:600;line-height:1.5}.ft-b small{display:block;color:var(--mut);font-size:.8rem;line-height:1.6}
+.ft-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:18px;border-top:1px solid var(--line);color:var(--mut);font-size:.8rem}
+.ft-up{width:40px;height:40px;border-radius:50%;border:1px solid var(--gold);background:none;color:var(--gs);cursor:pointer;display:grid;place-items:center;transition:transform .3s,background .3s}
+.ft-up:hover{background:#c9a24b22;transform:translateY(-3px)}.ft-up svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8}
+@media(min-width:900px){#ft{display:grid;grid-template-columns:1fr 1.7fr 1.2fr;gap:36px;align-items:start;padding-bottom:60px}.ft-top{align-items:flex-start;text-align:start}.ft-soc{justify-content:flex-start}.ft-cols{border:0;padding-top:0}.ft-bar{grid-column:1/-1}}
+</style>
 </head>
 <body>
 <div id="draft">نسخة تجريبية — سيتم تحديث المنتجات والأسعار والبيانات النهائية قبل الإطلاق.</div>
@@ -282,7 +321,7 @@ document.addEventListener('submit',e=>{if(e.target.id!=='cm')return;e.preventDef
 /* ===== ROUTER ===== */
 function filt(){const q=$('#fq').value,c=$('#fc').value,s=$('#fs').value,m=+$('#fp').value;let l=(q?find(q):PRODUCTS).filter(p=>(!c||p.cat===c)&&(!m||p.price<=m)&&(!R.ofr||p.old));l=[...l].sort((a,b)=>s==='a'?a.price-b.price:s==='d'?b.price-a.price:s==='b'?(b.best||0)-(a.best||0):(b.isNew||0)-(a.isNew||0)||b.id-a.id);$('#fl').innerHTML=grid(l);rv()}
 const io='IntersectionObserver' in window?new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.1}):null;
-function rv(){document.querySelectorAll('.card,.cat,.box,.step,section h2,details,.trust div,.band').forEach(el=>{if(el.classList.contains('rv'))return;el.classList.add('rv');io?io.observe(el):el.classList.add('in')})}
+function rv(){document.querySelectorAll('.card,.cat,.box,.step,section h2,details,.trust div,.band,.ft-s').forEach(el=>{if(el.classList.contains('rv'))return;el.classList.add('rv');io?io.observe(el):el.classList.add('in')})}
 let R={};
 function render(){const [,r,a]=ROUTE.split('/');R={ofr:r==='offers'};let h;
 if(!r)h=V.home();else if(r==='shop'||r==='offers')h=V.shop('',R.ofr);else if(r==='category')h=cat(a)?V.shop(a):V.nf();else if(r==='product')h=V.product(a);else if(V[r]&&['cart','wishlist','checkout','about','contact','faq'].includes(r))h=V[r]();else if(r==='confirmation')h=V.done(a);else if(LEGAL[r])h=V.legal(r);else h=V.nf();
@@ -316,8 +355,13 @@ document.querySelector('nav.d').innerHTML=NAV.map(n=>`<a href="${n[1]}">${n[0]}<
 $('#menu').innerHTML=NAV.concat(CATS.slice(2).map(c=>[c.name,'#/category/'+c.slug]),[['الأسئلة الشائعة','#/faq']]).map((n,i)=>`<a href="${n[1]}" style="--i:${i}">${n[0]}</a>`).join('')+`<div class="mf"><img data-logo alt="" width="72" height="72"><a class="btn sm" href="${TK}" target="_blank" rel="noopener">${tkI} تيك توك</a><a class="btn sm" href="${IG}" target="_blank" rel="noopener">${igI} إنستغرام</a></div>`;
 function setMenu(o){const m=$('#menu'),b=$('#mo');if(o)m.style.top=Math.max(0,$('header').getBoundingClientRect().bottom)+'px';m.classList.toggle('on',o);b.classList.toggle('open',o);b.setAttribute('aria-expanded',o)}
 $('#mo').onclick=()=>setMenu(!$('#menu').classList.contains('on'));addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
-$('#ft').innerHTML=`<div><img data-logo alt="" width="84" height="84" style="border-radius:50%;margin-bottom:10px"><h3>${CONFIG.STORE_NAME}</h3><p>محلكم السوداني في مصر.</p></div><div><h3>المتجر</h3>${CATS.map(c=>`<a href="#/category/${c.slug}">${c.name}</a>`).join('')}<a href="#/offers">العروض</a></div><div><h3>خدمة العملاء</h3><a href="#/contact">تواصل معنا</a><a href="#/shipping">الشحن والتوصيل</a><a href="#/returns">الاستبدال والاسترجاع</a><a href="#/faq">الأسئلة الشائعة</a></div><div><h3>معلومات</h3><a href="#/about">من نحن</a><a href="#/privacy-policy">سياسة الخصوصية</a><a href="#/terms">الشروط والأحكام</a><a href="#/refund-policy">سياسة الاسترداد</a></div><div><h3>تواصل معنا</h3><p dir="ltr" style="text-align:right;margin:0">${CONFIG.STORE_PHONE}<br>${CONFIG.WHATSAPP_DISPLAY}</p>${CONFIG.BRANCHES.map(b=>`<p style="margin:6px 0">${b.name}: <a href="${mapUrl(b)}" target="_blank" rel="noopener" style="display:inline;text-decoration:underline">${b.addr}</a></p>`).join('')}</div>`;
-$('#wa').href=wa('مرحبًا');$('#tk').href=TK;$('#ig').href=IG;$('#ft').lastElementChild.insertAdjacentHTML('beforeend',`<a href="${TK}" target="_blank" rel="noopener">تيك توك</a><a href="${IG}" target="_blank" rel="noopener">إنستغرام</a>`);
+const waI='<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 3a9 9 0 0 0-7.800 13.500L3 21l4.600-1.200A9 9 0 1 0 12 3zm4.500 12.300c-.2.600-1.200 1.100-1.700 1.200-.4.100-1 .1-1.600-.1-2.700-1.100-4.400-3.800-4.600-4-.1-.2-1.100-1.400-1.100-2.700s.7-1.900.9-2.200c.2-.2.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 1.900c.1.200.1.400 0 .5l-.4.600c-.1.200-.3.300-.1.600.6 1 1.300 1.700 2.300 2.200.3.100.4.100.6-.1l.7-.9c.2-.2.400-.2.600-.1l1.800.9c.2.100.4.200.4.300.1.200.1.600-.1 1.100z"/></svg>',pinI='<svg viewBox="0 0 24 24"><path d="M12 21s-6.500-5.600-6.500-11a6.500 6.500 0 0 1 13 0c0 5.400-6.500 11-6.500 11z"/><circle cx="12" cy="10" r="2.300"/></svg>';
+$('#ft').innerHTML=`<div class="ft-top ft-s" style="--i:0"><span class="ft-logo"><img data-logo alt="" width="84" height="84"></span><h3>${CONFIG.STORE_NAME}</h3><p>محلكم السوداني في مصر.</p><div class="ft-soc"><a href="${TK}" target="_blank" rel="noopener" aria-label="تيك توك">${tkI}</a><a href="${IG}" target="_blank" rel="noopener" aria-label="إنستغرام">${igI}</a><a href="${wa('مرحبًا')}" target="_blank" rel="noopener" aria-label="واتساب">${waI}</a></div></div>
+<nav class="ft-cols" aria-label="روابط التذييل"><div class="ft-s" style="--i:1"><h3>المتجر</h3><div class="ft-chips">${CATS.map(c=>`<a href="#/category/${c.slug}">${c.name}</a>`).join('')}<a href="#/offers">العروض</a></div></div><div class="ft-s ft-ls" style="--i:2"><h3>خدمة العملاء</h3><a href="#/contact">تواصل معنا</a><a href="#/shipping">الشحن والتوصيل</a><a href="#/returns">الاستبدال والاسترجاع</a><a href="#/faq">الأسئلة الشائعة</a></div><div class="ft-s ft-ls" style="--i:3"><h3>معلومات</h3><a href="#/about">من نحن</a><a href="#/privacy-policy">سياسة الخصوصية</a><a href="#/terms">الشروط والأحكام</a><a href="#/refund-policy">سياسة الاسترداد</a></div></nav>
+<div class="ft-ct ft-s" style="--i:4"><h3>تواصل معنا</h3><div class="ft-btns"><a class="btn sm" href="tel:${CONFIG.STORE_PHONE}" dir="ltr">${CONFIG.STORE_PHONE}</a><a class="btn o sm" href="${wa('مرحبًا')}" target="_blank" rel="noopener">${waI} واتساب</a></div>${CONFIG.BRANCHES.map(b=>`<a class="ft-b" href="${mapUrl(b)}" target="_blank" rel="noopener">${pinI}<span><b>${b.name}</b><small>${b.addr}</small></span></a>`).join('')}</div>
+<div class="ft-bar"><span>© ${new Date().getFullYear()} ${CONFIG.STORE_NAME}</span><button type="button" class="ft-up" id="up" aria-label="العودة للأعلى"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button></div>`;
+$('#up').onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+$('#wa').href=wa('مرحبًا');$('#tk').href=TK;$('#ig').href=IG;
 $('#sb').onclick=()=>{$('#so').classList.add('on');$('#si').focus()};$('#sx').onclick=()=>$('#so').classList.remove('on');
 $('#si').oninput=e=>{const q=e.target.value;$('#sr').innerHTML=q.trim()?grid(find(q)).replace(/^<div class="grid">|<\/div>$/g,''):''};
 $('#sr').onclick=e=>{if(e.target.closest('a'))$('#so').classList.remove('on')};
@@ -345,6 +389,7 @@ $('#chips').onclick=e=>{if(e.target.tagName==='BUTTON')ask(e.target.textContent)
 $('#cf').onsubmit=e=>{e.preventDefault();const v=$('#ci').value.trim();if(v){$('#ci').value='';ask(v)}};
 $('#ai').onclick=()=>{$('#chat').classList.toggle('on');if(!$('#msgs').children.length)say('مرحبًا بك في '+CONFIG.STORE_NAME+'. أنا '+CONFIG.ASSISTANT_NAME+'، يسعدني مساعدتك في اختيار ما يناسبك.','b')};$('#cx').onclick=()=>$('#chat').classList.remove('on');
 document.querySelectorAll('[data-logo]').forEach(i=>i.src=IMG.logo);{const l=document.createElement('link');l.rel='icon';l.href=IMG.logo;document.head.append(l)}
+['gesturestart','gesturechange','gestureend'].forEach(t=>document.addEventListener(t,e=>e.preventDefault()));
 render();
 </script>
 </body>
